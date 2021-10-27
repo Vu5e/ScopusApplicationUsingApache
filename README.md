@@ -39,3 +39,12 @@
 
 ## Spark - SQL
 ![image](https://user-images.githubusercontent.com/28688869/139133437-dbca6801-4e85-4ec3-ace0-c2bdb9702597.png)
+
+## Final Result
+![image](https://user-images.githubusercontent.com/28688869/139134386-d0696f8e-c879-41bd-ac6d-93e1d46c623d.png)
+
+## Conclusion
+From my experiment, Spark SQL is the fastest to query among others. As seen in the SQL for Hive and Impala, eventhough they use SQL the speed can't be compared 
+with using Spark SQL. This is probably because of Spark can connect to jdbc as well as SQL or MYSQL. For long running, Spark is faster as it used massively parallel system. Hive and Impala can use 1 core per queries but Spark can use most of the cores on all cluster nodes provided in the system. 
+
+The usage of time execution is taken from Apache Spark Server History. To justify this is because if the usage of NanoTime or other functions to take the execution time. It will be plus minus 2 to 3 seconds which is not accurate for me. So to solve that by using Apache Spark Server History to see the time taken for execution is more accurate in my view.
